@@ -1,21 +1,21 @@
-## Finish
+## 完成
 
-_Congratulations friend, you've completed this course!_
+_恭喜, 你已经完成了整个课程！_
 
 <img src=https://octodex.github.com/images/jetpacktocat.png alt="Mona the Octocat wearing a jetpack and smiling." width=300 align=right>
 
-Here's a recap of all the tasks you've accomplished in your repository:
+来回顾一下你在这个仓库里完成的所有成果：
 
-- You've created your first GitHub Actions workflow file.
-- You learned where to make your workflow file.
-- You defined an event trigger, a job, and a step for your workflow.
-- You're ready to automate anything you can dream of.
+- 你创建了你的第一个 GitHub Actions workflow文件
+- 你知道了 workflow 文件应该放在哪里
+- 你为工作流定义了触发事件（event）、任务（job）和步骤（step）
+- 你已经具备了用自动化实现各种想法的能力！
 
-### What's next?
+### 接下来可以做什么？
 
-- Learn more about GitHub Actions by reading "[Learn GitHub Actions](https://docs.github.com/actions/learn-github-actions)"
-- Use actions created by others in [awesome-actions](https://github.com/sdras/awesome-actions)
-- We'd love to hear what you thought of this course [in our discussion board](https://github.com/orgs/skills/discussions/categories/hello-github-actions)
-- [Take another course on GitHub Actions](https://skills.github.com/#automate-workflows-with-github-actions)
-- Learn more about GitHub by reading the "[Get started](https://docs.github.com/get-started)" docs
-- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore)
+- 想系统进阶？阅读：[Learn GitHub Actions](https://docs.github.com/actions/learn-github-actions)
+- 想直接用别人写好的 actions？看看这个仓库：[awesome-actions](https://github.com/sdras/awesome-actions)
+- 想反馈课程体验？欢迎到讨论区留言：[Discussion Board](https://github.com/orgs/skills/discussions/categories/hello-github-actions)
+- 想继续学习相关课程？去这里挑一个：[更多 GitHub Actions 课程](https://skills.github.com/#automate-workflows-with-github-actions)
+- 想了解 GitHub 的更多功能？阅读：[Get started](https://docs.github.com/get-started)
+- 想找项目参与？去逛逛：[GitHub Explore](https://github.com/explore)

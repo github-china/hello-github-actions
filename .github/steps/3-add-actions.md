@@ -1,19 +1,22 @@
-## Step 3: Add a step to your workflow file
+## Step 3: 为工作流添加一个 step
 
-_Nice work adding a job to your workflow! :dancer:_
+_你已经成功添加了一个 job，干得很棒！:dancer:_
 
-Workflows have jobs, and jobs have steps. So now we'll add a step to your workflow.
+接下来我们继续完善它, 在 job 中加入一个 step。
 
-**What are _steps_?**: Actions steps run - in the order they are specified, from the top down - when a workflow job is processed. Each step must pass for the next step to run.
+**什么是 *step（步骤）*？** 在 workflow 中，一个 job 由多个 step 组成。step 会**从上到下按顺序执行**，并且**每一步必须成功，下一步才会继续运行**。
 
-Each step consists of either a shell script that's executed, or a reference to an action that's run. When we talk about an action (with a lowercase "a") in this context, we mean a reusable unit of code. You can find out about actions in "[Finding and customizing actions](https://docs.github.com/en/actions/learn-github-actions/finding-and-customizing-actions)," but for now we'll use a shell script in our workflow step.
+每个 step 要么运行一段 shell 脚本，要么调用一个可复用的 action（小写的 “action” 指的是一段可复用的代码逻辑）。关于自定义 actions，可以参考文档 “[Finding and customizing actions](https://docs.github.com/en/actions/learn-github-actions/finding-and-customizing-actions)”，但这一步我们不需要 action，而是直接用 shell 脚本。
 
-Update your workflow to make it post a comment on new pull requests. It will do this using a [bash](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29) script and [GitHub CLI](https://cli.github.com/).
+我们现在要更新 workflow，让它自动在新的 pull request 下发表评论。这里会用到：
 
-### :keyboard: Activity: Add a step to your workflow file
+* [Bash](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29) 脚本
+* [GitHub CLI](https://cli.github.com/)
 
-1. Still working on the `welcome-workflow` branch, open your `welcome.yml` file.
-1. Update the contents of the file to:
+### :keyboard: 实操环节: 添加一个 step 到工作流中
+
+1. 仍在 `welcome-workflow` 分支下，打开你的 `welcome.yml` 文件。
+2. 将文件内容更新为以下内容：
 
    ```yaml copy
    name: Post welcome comment
@@ -33,8 +36,10 @@ Update your workflow to make it post a comment on new pull requests. It will do 
              PR_URL: ${{ github.event.pull_request.html_url }}
    ```
 
-   **Note:** The step you've added uses GitHub CLI (`gh`) to add a comment when a pull request is opened. To allow GitHub CLI to post a comment, we set the `GITHUB_TOKEN` environment variable to the value of the `GITHUB_TOKEN` secret, which is an installation access token, created when the workflow runs. For more information, see "[Automatic token authentication](https://docs.github.com/en/actions/security-guides/automatic-token-authentication)." We set the `PR_URL` environment variable to the URL of the newly created pull request, and we use this in the `gh` command.
-   
-1. Click **Commit changes** in the top right of the workflow editor.
-1. Type your commit message and commit your changes directly to your branch.
-1. Wait about 20 seconds, then refresh this page (the one you're following instructions from). Another workflow will run and will replace the contents of this README file with instructions for the next step.
+   **说明：** 我们添加的这个步骤使用 GitHub CLI (`gh`) 在 pull request 创建时发布一条评论。
+   - `GITHUB_TOKEN`：通过 `secrets.GITHUB_TOKEN` 提供，用来授权 CLI 发表评论。这是 GitHub 在运行 workflow 时自动生成的token。详情可参考 “[Automatic token authentication](https://docs.github.com/en/actions/security-guides/automatic-token-authentication)”。
+   - `PR_URL`：通过 `${{ github.event.pull_request.html_url }}` 获取当前 pull request 的地址，供脚本使用。
+
+3. 在右上角点击 **Commit changes**。
+4. 输入提交信息并将修改直接提交到当前分支。
+5. 等待大约20秒，然后刷新当前课程页面。[GitHub Actions](https://docs.github.com/en/actions) 会自动检测并进入下一步。

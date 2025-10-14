@@ -1,18 +1,22 @@
-## Step 5: Trigger the workflow
+## Step 5: 触发工作流
 
-_You've now added a fully functioning workflow to your repository! :smile:_
+_现在你的仓库里已经有一个可以正常运行的工作流程了! :smile:_
 
-The shell script in the workflow will run whenever a new pull request is opened.
+接下来，我们来运行它，看看效果。
 
-**Seeing your _action_ in action**: The status of each workflow run that's triggered is shown in the pull request before it's merged: look for **All checks have passed** when you try out the steps below. You can also see a list of all the workflows that are running, or have finished running, in the **Actions** tab of your repository. From there, you can click on each workflow run to view more details and access log files.
+这个工作流程里的 shell 脚本会在**每当有人新建一个 pull request 时**自动执行。
 
-![A screenshot of the Actions tab showing a list of workflow runs.](https://user-images.githubusercontent.com/16547949/62388049-4e64e600-b52a-11e9-8bf5-db0c5452360f.png)
+**如何查看工作流程是否触发？** 当 pull request 被创建后，GitHub 会自动运行对应的 workflow。在 PR 页面中，你可以看到它的执行状态。如果看到 **All checks have passed**，说明运行成功。
 
-### :keyboard: Activity: Trigger the workflow
+你也可以打开仓库里的 **Actions** 标签页，查看所有运行中的或已完成的 workflow。在那里还能点开某次运行，查看详情和日志。
 
-1. Make a new branch named `test-workflow`.
-1. Make a change, such as adding an emoji to your README.md file, and commit the change directly to your new branch.
-1. In the **Pull requests** tab, create a pull request that will merge `test-workflow` into `main`.
-1. Watch the workflow running in the checks section of the pull request.
-1. Notice the comment that the workflow adds to the pull request.
-1. Wait about 20 seconds, then refresh this page (the one you're following instructions from). Another workflow will run and will replace the contents of this README file with instructions for the next step.
+![Actions 页面中显示 workflow 运行列表的截图](https://user-images.githubusercontent.com/16547949/62388049-4e64e600-b52a-11e9-8bf5-db0c5452360f.png)
+
+### :keyboard: 实操环节: 触发工作流
+
+1. 创建一个名为 `test-workflow` 的新分支。
+2. 修改任意文件，比如在 README.md 里加一个 emoji，然后直接提交到这个新分支。
+3. 打开 **Pull requests** 标签页，创建一个从 `test-workflow` 合并到 `main` 的 pull request。
+4. 查看 PR 页面中的检查（checks）区域，观察 workflow 的运行。
+5. 注意工作流自动在该 pull request 下添加的评论。
+6. 等待大约20秒，然后刷新当前课程页面。[GitHub Actions](https://docs.github.com/en/actions) 会自动检测并进入下一步。

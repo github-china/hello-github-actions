@@ -1,13 +1,13 @@
-## Step 4: Merge your workflow file
+## Step 4: 合并你的 Workflow 文件
 
-_You're now able to write and run an Actions workflow! :sparkles:_
+_现在你已经能够编写并运行一个 Actions 工作流了！:sparkles:_
 
-Merge your changes so the action will be a part of the `main` branch.
+接下来要把它合并进 `main` 分支，让它真正生效。
 
-### :keyboard: Activity: Merge your workflow file
+### :keyboard: 实操环节：合并你的 workflow 文件
 
-1. In your repo, click on the **Pull requests** tab.
-1. Click on the pull request you created in step 1.
-1. Click **Merge pull request**, then click **Confirm merge**.
-1. Optionally, click **Delete branch** to delete your `welcome-workflow` branch.
-1. Wait about 20 seconds, then refresh this page (the one you're following instructions from). Another workflow will run and will replace the contents of this README file with instructions for the next step.
+1. 打开你的仓库，点击 **Pull requests** 标签页。
+2. 找到你在第一步创建的那个 pull request，并点击进入。
+3. 点击 **Merge pull request**，然后再点击 **Confirm merge** 确认合并。
+4. （可选）点击 **Delete branch** 删除 `welcome-workflow` 分支。
+5. 等待大约20秒，然后刷新当前课程页面。[GitHub Actions](https://docs.github.com/en/actions) 会自动检测并进入下一步。
