@@ -31,7 +31,7 @@ _学习如何创建并运行一个 GitHub Actions 工作流(Workflow)。_
 
 ### 如何开始课程
 
-[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=skills&template_name=hello-github-actions&owner=%40me&name=skills-hello-github-actions&description=My+clone+repository&visibility=public)
+[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=github-china&template_name=hello-github-actions&owner=%40me&name=skills-hello-github-actions&description=My+clone+repository&visibility=public)
 
 1. 右键点击上方 **Start course** 按钮，选择在新标签页中打开链接。
 2. 在新页面中根据系统提示新建一个仓库。
